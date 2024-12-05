@@ -36,6 +36,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Specific Style for 'Welcome to' Text */
+.welcome-text {
+    font-family: 'Helvetica', sans-serif;  /* Apply Helvetica to 'Welcome to' */
+    font-weight: normal;  /* Ensure it's not bold if not desired */
+    font-size: 48px;  /* Match the font size of the rest of the header */
+}
+
+
 /* Paragraph Styles */
 p {
     font-family: 'PunkFont14', sans-serif;  /* Use PunkFont14 */
