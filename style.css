@@ -27,33 +27,3 @@ body {
     text-align: center;
     padding: 20px;
 }
-
-/* Header (Randomized Colorized Text) */
-h1 {
-    font-family: 'PunkFont14', sans-serif;  /* Apply custom font */
-    font-size: 48px;
-    color: #007BFF; /* Fallback color before JS changes */
-    margin-bottom: 20px;
-}
-
-/* Paragraph Styles */
-p {
-    font-family: 'PunkFont14', sans-serif;  /* Custom font for paragraphs */
-    font-size: 24px;
-    color: #333;
-    margin: 10px 0;
-}
-
-/* Styling the container for text */
-#randomized-text {
-    display: inline-block; /* Ensure the text is inline */
-    text-align: center;
-}
-
-/* Optional: Style other text elements */
-h2, h3 {
-    font-family: 'PunkFont14', sans-serif;
-    font-size: 32px;
-    color: #333;
-}
-
