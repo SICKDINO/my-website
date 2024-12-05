@@ -7,41 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="randomized-text">Welcome to <span id="randomized-word">SICKDINO</span>!</h1>
+    <h1>Welcome to SICKDINO!</h1>
     <p>UNDER CONSTRUCTION.</p>
     <p>GET REKT</p>
-
-    <script>
-        // List of colors to randomly alternate
-        const colors = ['#FF007F', '#00BFFF', '#FF69B4'];
-
-        // Function to randomly assign colors to each letter of "SICKDINO"
-        function randomizeTextColor() {
-            const textElement = document.getElementById('randomized-word');
-            const textContent = textElement.innerText.split('');
-            textElement.innerHTML = '';
-
-            let lastColor = null;  // Track the last used color
-
-            textContent.forEach(letter => {
-                const span = document.createElement('span');
-                span.innerText = letter;
-
-                // Select a color that is different from the last used color
-                let newColor;
-                do {
-                    newColor = colors[Math.floor(Math.random() * colors.length)];
-                } while (newColor === lastColor);  // Ensure the color isn't the same as the last one
-
-                span.style.color = newColor;
-                textElement.appendChild(span);
-
-                lastColor = newColor;  // Update the last used color
-            });
-        }
-
-        // Call the function to apply the alternating colors to "SICKDINO"
-        randomizeTextColor();
-    </script>
 </body>
 </html>
