@@ -1,4 +1,19 @@
-/* Define the custom font using @font-face */
+/* Define the custom fonts using @font-face */
+@font-face {
+  font-family: 'PunkFont01';
+  src: url('fonts/punk-01.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PunkFont02';
+  src: url('fonts/punk-02.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PunkFont13';
+  src: url('fonts/punk-13.ttf') format('truetype');
+}
+
 @font-face {
   font-family: 'PunkFont14';
   src: url('fonts/punk-14.ttf') format('truetype');
@@ -6,7 +21,7 @@
 
 /* General Body Styles */
 body {
-    font-family: 'PunkFont14', sans-serif; /* Apply PunkFont14 globally */
+    font-family: 'PunkFont14', sans-serif; /* Default to PunkFont14 */
     background-color: #A9A9A9; /* Concrete Gray */
     color: #333;  /* Black text */
     text-align: center;
@@ -15,7 +30,7 @@ body {
 
 /* Header Style */
 h1 {
-    font-family: 'PunkFont14', sans-serif;  /* Apply PunkFont14 */
+    font-family: 'PunkFont14', sans-serif;  /* Use PunkFont14 */
     font-size: 48px;
     color: #333;  /* Black color */
     margin-bottom: 20px;
@@ -23,7 +38,7 @@ h1 {
 
 /* Paragraph Styles */
 p {
-    font-family: 'PunkFont14', sans-serif;  /* Apply PunkFont14 */
+    font-family: 'PunkFont14', sans-serif;  /* Use PunkFont14 */
     font-size: 24px;
     color: #333; /* Black text */
     margin: 10px 0;
@@ -31,7 +46,9 @@ p {
 
 /* Optional: Style other text elements */
 h2, h3 {
-    font-family: 'PunkFont14', sans-serif; /* Apply PunkFont14 */
+    font-family: 'PunkFont14', sans-serif; /* Use PunkFont14 */
     font-size: 32px;
     color: #333;
 }
+
+/* You can also add some specific styling for the other font families (PunkFont01, PunkFont02, PunkFont13) if needed */
