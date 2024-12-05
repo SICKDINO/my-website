@@ -1,11 +1,28 @@
+@font-face {
+  font-family: 'PunkFont01';
+  src: url('fonts/punk-01.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PunkFont02';
+  src: url('fonts/punk-02.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PunkFont13';
+  src: url('fonts/punk-13.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PunkFont14';
+  src: url('fonts/punk-14.ttf') format('truetype');
+}
+
+/* Apply fonts to elements */
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif; /* Default font */
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
     padding: 20px;
-}
-
-h1 {
-    color: #007BFF;
 }
