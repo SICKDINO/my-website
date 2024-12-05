@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* Header (Randomized Colorized "SICKDINO" text) */
+/* Header (Alternating Colorized "SICKDINO" text) */
 h1 {
     font-family: 'PunkFont14', sans-serif;  /* Apply PunkFont14 */
     font-size: 48px;
@@ -28,8 +28,8 @@ p {
     margin: 10px 0;
 }
 
-/* Styling the container for the randomized "SICKDINO" text */
-#randomized-word {
+/* Styling the container for the alternating "SICKDINO" text */
+#alternating-word {
     display: inline-block; /* Ensure the text is inline */
 }
 
