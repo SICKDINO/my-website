@@ -20,9 +20,9 @@
 
 /* Apply fonts to elements */
 body {
-    font-family: 'PunkFont02', Arial, sans-serif; /* Default font */
+    font-family: 'PunkFont13', Arial, sans-serif; /* Default font */
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
 }
