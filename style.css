@@ -28,11 +28,6 @@ body {
     padding: 20px;
 }
 
-/* Hide all header tags */
-h1, {
-    display: none;
-}
-
 /* Header Style */
 h1 {
     font-family: 'PunkFont13', sans-serif;  /* Use PunkFont14 */
