@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <h1>welcome to SICKDINO!</h1>
-    <p>UNDER CONSTUCTION.</p>
+    <!-- Welcome Text with Randomized Colors -->
+    <h1 id="randomized-text">welcome to SICKDINO!</h1>
+    <p>UNDER CONSTRUCTION.</p>
     <p>GET REKT</p>
+
+    <!-- Add JavaScript for Random Letter Colors -->
+    <script>
+        window.onload = function() {
+            const textContainer = document.getElementById("randomized-text");
+            const text = textContainer.innerText;
+            
+            // Define an array of colors to randomize
+            const colors = ["#FF5733", "#007BFF", "#28A745", "#FFC300", "#C70039", "#900C3F", "#581845"];
+            
+            // Create a new string where each letter gets a random color
+            let coloredText = "";
+
+            for (let i = 0; i < text.length; i++) {
+                // Randomize the color
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                coloredText += `<span style="color:${randomColor};">${text[i]}</span>`;
+            }
+
+            // Set the new colored text as the HTML of the container
+            textContainer.innerHTML = coloredText;
+        };
+    </script>
 </body>
 </html>
