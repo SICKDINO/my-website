@@ -39,7 +39,7 @@ h1 {
 /* Specific Style for 'Welcome to' Text */
 .welcome-text {
     font-family: 'Helvetica', sans-serif;  /* Apply Helvetica to 'Welcome to' */
-    font-weight: normal;  /* Ensure it's not bold if not desired */
+    font-weight: bold;  /* Ensure it's not bold if not desired */
     font-size: 48px;  /* Match the font size of the rest of the header */
 }
 
