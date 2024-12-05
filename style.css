@@ -27,3 +27,18 @@ body {
     text-align: center;
     padding: 20px;
 }
+/* Example usage for randomizing colors */
+h1 {
+    font-family: 'PunkFont14', sans-serif;
+    font-size: 48px;
+    color: #FF007F; /* Neon Pink */
+    margin-bottom: 20px;
+}
+
+/* Example for paragraph color */
+p {
+    font-family: 'PunkFont14', sans-serif;
+    font-size: 24px;
+    color: #00BFFF; /* Electric Blue */
+    margin: 10px 0;
+}
