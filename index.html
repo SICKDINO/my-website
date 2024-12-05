@@ -4,35 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Welcome Text with Randomized Colors -->
-    <h1 id="randomized-text">welcome to SICKDINO!</h1>
+    <h1 id="randomized-text">Welcome to SICKDINO!</h1>
     <p>UNDER CONSTRUCTION.</p>
     <p>GET REKT</p>
 
-    <!-- Add JavaScript for Random Letter Colors -->
     <script>
-        window.onload = function() {
-            const textContainer = document.getElementById("randomized-text");
-            const text = textContainer.innerText;
-            
-            // Define an array of colors to randomize
-            const colors = ["#FF5733", "#007BFF", "#28A745", "#FFC300", "#C70039", "#900C3F", "#581845"];
-            
-            // Create a new string where each letter gets a random color
-            let coloredText = "";
+        // List of colors
+        const colors = ['#FF007F', '#00BFFF', '#FF69B4', '#FF0000', '#FFFF00', '#FF6600'];
 
-            for (let i = 0; i < text.length; i++) {
-                // Randomize the color
-                const randomColor = colors[Math.floor(Math.random() * colors.length)];
-                coloredText += `<span style="color:${randomColor};">${text[i]}</span>`;
-            }
+        // Function to randomize letter colors
+        function randomizeTextColor() {
+            const textElement = document.getElementById('randomized-text');
+            const textContent = textElement.innerText.split('');
+            textElement.innerHTML = '';
 
-            // Set the new colored text as the HTML of the container
-            textContainer.innerHTML = coloredText;
-        };
+            textContent.forEach(letter => {
+                // Create a span for each letter and assign a random color
+                const span = document.createElement('span');
+                span.innerText = letter;
+                span.style.color = colors[Math.floor(Math.random() * colors.length)];
+                textElement.appendChild(span);
+            });
+        }
+
+        // Call the function to apply the random colors
+        randomizeTextColor();
     </script>
 </body>
 </html>
