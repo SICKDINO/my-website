@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="randomized-text">Welcome to SICKDINO!</h1>
+    <h1 id="randomized-text">Welcome to <span id="randomized-word">SICKDINO</span>!</h1>
     <p>UNDER CONSTRUCTION.</p>
     <p>GET REKT</p>
 
@@ -15,9 +15,9 @@
         // List of colors
         const colors = ['#FF007F', '#00BFFF', '#FF69B4', '#FF0000', '#FFFF00', '#FF6600'];
 
-        // Function to randomize letter colors
+        // Function to randomize letter colors for "SICKDINO"
         function randomizeTextColor() {
-            const textElement = document.getElementById('randomized-text');
+            const textElement = document.getElementById('randomized-word');
             const textContent = textElement.innerText.split('');
             textElement.innerHTML = '';
 
@@ -30,7 +30,7 @@
             });
         }
 
-        // Call the function to apply the random colors
+        // Call the function to apply the random colors to "SICKDINO"
         randomizeTextColor();
     </script>
 </body>
