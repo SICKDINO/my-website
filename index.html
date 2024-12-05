@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="randomized-text">Welcome to <span id="randomized-word">SICKDINO</span>!</h1>
+    <h1 id="randomized-text">Welcome to <span id="alternating-word">SICKDINO</span>!</h1>
     <p>UNDER CONSTRUCTION.</p>
     <p>GET REKT</p>
 
     <script>
-        // Updated color list with black and without Bright Red, Bright Yellow, and Neon Orange
-        const colors = ['#FF007F', '#00BFFF', '#FF69B4', '#000000'];
+        // Define the color array to alternate between
+        const colors = ['#FF007F', '#00BFFF', '#FF69B4'];
 
-        // Function to randomize letter colors for "SICKDINO"
-        function randomizeTextColor() {
-            const textElement = document.getElementById('randomized-word');
+        // Function to alternate letter colors for "SICKDINO"
+        function alternateTextColor() {
+            const textElement = document.getElementById('alternating-word');
             const textContent = textElement.innerText.split('');
             textElement.innerHTML = '';
 
-            textContent.forEach(letter => {
-                // Create a span for each letter and assign a random color
+            textContent.forEach((letter, index) => {
+                // Create a span for each letter and assign a color based on index
                 const span = document.createElement('span');
                 span.innerText = letter;
-                span.style.color = colors[Math.floor(Math.random() * colors.length)];
+                span.style.color = colors[index % colors.length];  // Use modulo to alternate colors
                 textElement.appendChild(span);
             });
         }
 
-        // Call the function to apply the random colors to "SICKDINO"
-        randomizeTextColor();
+        // Call the function to apply the alternating colors to "SICKDINO"
+        alternateTextColor();
     </script>
 </body>
 </html>
